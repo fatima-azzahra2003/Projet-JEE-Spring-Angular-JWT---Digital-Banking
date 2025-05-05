@@ -13,4 +13,7 @@ public class CurrentBankAccountDTO extends BankAccountDTO {
     private AccountStatus status;
     private CustomerDTO customerDTO;
     private double overDraft;
+
+    public void setType(String simpleName) {
+    }
 }

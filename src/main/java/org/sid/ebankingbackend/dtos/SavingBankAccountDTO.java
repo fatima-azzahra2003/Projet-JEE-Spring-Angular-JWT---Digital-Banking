@@ -14,4 +14,8 @@ public class SavingBankAccountDTO extends
     private AccountStatus status;
     private CustomerDTO customerDTO;
     private double interestRate;
+
+    public void setType(String simpleName) {
+
+    }
 }
