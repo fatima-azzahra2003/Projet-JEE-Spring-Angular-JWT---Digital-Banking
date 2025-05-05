@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.sid.ebankingbackend.enums.OperationType;
 import org.springframework.data.annotation.Id;
 
 import java.util.Date;
@@ -13,6 +14,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class AccountOperation {
+    @jakarta.persistence.Id
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -23,4 +25,6 @@ public class AccountOperation {
     @ManyToOne
     private BankAccount bankAccount;
     private String description;
+
+
 }
